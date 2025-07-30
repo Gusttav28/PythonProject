@@ -10,14 +10,24 @@ This repo is a technical repo in where all the information it would placed in a 
 
 Since a continue creating the project I will continue to put more details about eveything that I going to build here.
 
-## I need to say that all this it would be with the respective links
+I need to say that all this it would be with the respective links
 
 ## Python Essentials
 
+- Respective blog link
+
 ## Python for the Development (API's, GRAPHQL, Docker, Cloud, CI/CD)
+
+- Respective blog link
 
 ## Python for Data Analyst
 
+- Respective blog link
+
 ## Python for Data Engineer
 
+- Respective blog link
+
 ## Python for Data Science
+
+- Respective blog link
