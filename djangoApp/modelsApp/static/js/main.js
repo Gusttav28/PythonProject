@@ -1,4 +1,4 @@
-const url_users = "http://127.0.0.1:8004/users/users/"
+const url_users = "http://127.0.0.1:8000/users/users/"
 
 const div = document.getElementById("div")
 
