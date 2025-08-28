@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'modelsApp',
     'UsersRestAPI',
     'corsheaders',
+    'library',
 ]
 
 MIDDLEWARE = [

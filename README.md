@@ -20,6 +20,27 @@ I need to say that all this it would be with the respective links
 
 - Respective blog link
 
+## Things regarding to create a project using django
+
+Starting with the project:
+
+- python3 -m venv [name of you virtual enviroment]
+
+- To activate the venv you can click f1 if you're using vscode this would guide to a couple of options that of differents python enviroments, he usually would recommend you to use one, so choose that one. If maybe vscode is not recommend you nothing about it, you can start the project by doing this:
+
+- source [name of you venv]/bin/activate
+- to deactivate it would be -> deactivate
+
+Then you go with installing the necessary librarys and frameworks
+
+- pip install django
+- pip install djangorestframework
+- pip install mysql-connector-python
+- pip install mysqlclient
+- pip PyMySQL
+
+- django-admin startproject [name of you project] . (the dot is to create the file inside of the folder that you currently have, if you don't use the dot, django will create the project insidie of antoher folder that he would create)
+
 ## Python for Data Analyst
 
 - Respective blog link
