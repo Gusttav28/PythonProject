@@ -8,6 +8,12 @@ class Author(models.Model):
     last_name = models.CharField(max_length=200)
     age = models.IntegerField()
     
+    # in order to check the value of this field we convert the value into a string with constructo of __str__
+    # so in this way, at the moment that you create the serializer the name would be appear in the drop down and not
+    # the id of the field
+    def __str__(self):
+        return self.name
+    
 
 # This model class is connected to the class model Author by the ForeignKey and is to register book on the DB
 # The way the this one can connect is because that ForeignKey, this one expect to have two different parametters
@@ -23,6 +29,12 @@ class Book(models.Model):
     author_name = models.ForeignKey(Author, on_delete=models.CASCADE) 
     joined_at = models.DateTimeField(auto_now_add=True)
     
+    def __str__(self):
+        return self.title
+    
+    
+    
+    
 
 # This class over here is to register the members of the books store
 class Member(models.Model):
@@ -30,6 +42,9 @@ class Member(models.Model):
     cx_lastName = models.CharField(max_length=200)
     cx_email = models.EmailField(max_length=254)
     cx_phoneNumber = models.IntegerField()
+    
+    def __str__(self):
+        return self.cx_email
     
 
 # And this model class has information of a loan member that gets a book from the storex

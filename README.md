@@ -10,15 +10,15 @@ This repo is a technical repo in where all the information it would placed in a 
 
 Since a continue creating the project I will continue to put more details about eveything that I going to build here.
 
-I need to say that all this it would be with the respective links
+I need to say that all this it would be with the respective links.
 
 ## Python Essentials
 
-- Respective blog link
+- Respective blog link.
 
 ## Python for the Development (API's, GRAPHQL, Docker, Cloud, CI/CD)
 
-- Respective blog link
+- Respective blog link.
 
 ## Things regarding to create a project using django
 
@@ -31,7 +31,7 @@ Starting with the project:
 - source [name of you venv]/bin/activate
 - to deactivate it would be -> deactivate
 
-Then you go with installing the necessary librarys and frameworks
+Then you go with installing the necessary librarys and frameworks.
 
 - pip install django
 - pip install djangorestframework
@@ -41,14 +41,41 @@ Then you go with installing the necessary librarys and frameworks
 
 - django-admin startproject [name of you project] . (the dot is to create the file inside of the folder that you currently have, if you don't use the dot, django will create the project insidie of antoher folder that he would create)
 
+## Python django ORM
+
+At the moment that you need or want to use or to the orm from django this are the keys that you need to considered.
+
+1. import first the models from the application in where you wanna working on.
+
+- from library.models import \*
+
+2. than, to get all the values from the models it would be like this:
+
+- Book.objects.all().values()
+
+3. to storage an element in a model that doesn't have any relationship with any other data base it would be like this:
+
+- author = Author(name = "test", last_name = "test", age = 21)
+- author.save()
+
+4. than if is for a table or model that actually has a relantionship beetwen an existing model you can use:
+
+- book = Book(title = "test", author_name_id = 2) [in author_name_id = id] you need to looking for the id of the author to be able to link the record of the book to that author.
+
+so if is for test, check first the id from test, and than make the query above.
+
+5. than if you wanna filter some register to check the autor from a specific book you just do this:
+
+- Book.objects.filter(author_name_id=[the id from of the author]).values('title', 'author_name\_\_name')
+
 ## Python for Data Analyst
 
-- Respective blog link
+- Respective blog link.
 
 ## Python for Data Engineer
 
-- Respective blog link
+- Respective blog link.
 
 ## Python for Data Science
 
-- Respective blog link
+- Respective blog link.
