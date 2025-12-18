@@ -57,3 +57,11 @@ class loan(models.Model):
     phoneNumber = models.IntegerField()
     order_createdAt = models.DateTimeField(auto_now_add=True)
     
+    
+    def __str__(self):
+        return self.book_title
+    
+    
+    def __str__(self):
+        return self.book_author
+    
